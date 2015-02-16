@@ -8,9 +8,10 @@ txt = open(filename)
 puts "Here's your file #{filename}:"
 # prints file contents
 print txt.read
+txt.close()
 
 # another string
-print "Type the filename again:  "
+print "\nType the filename again:  "
 # takes from previous input
 file_again = $stdin.gets.chomp
 
@@ -19,3 +20,4 @@ txt_again = open(file_again)
 
 # opens again
 print txt_again.read
+txt_again.close()
